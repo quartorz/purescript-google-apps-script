@@ -1,7 +1,12 @@
 exports.openByIdImpl = SpreadsheetApp.openById;
 exports.getSheetByNameImpl = (s, name) => s.getSheetByName(name);
+exports.getDataRangeImpl = s => s.getDataRange();
 exports.getRangeImpl = (s, row, col, nrows, ncols) => s.getRange(row, col, nrows, ncols);
+exports.getMaxColumnsImpl = s => s.getMaxColumns();
 exports.getDisplayValuesImpl = r => r.getDisplayValues();
 exports.getValuesImpl = r => r.getValues();
+exports.getBackgroundsImpl = r => r.getBackgrounds();
+exports.getNumColumnsImpl = r => r.getNumColumns();
+exports.getSheetNameImpl = s => s.getSheetName();
 exports.isString = s => typeof s === 'string';
 exports.isNumber = s => typeof s === 'number';
